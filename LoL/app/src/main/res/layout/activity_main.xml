@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sus"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/price_current"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/price_current"
+        android:textAlignment="center"
+        android:textColor="@color/teal_200"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="13dp"
+        android:layout_marginTop="100sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/money"
+        />
+
+    <EditText
+        android:id="@+id/money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="@string/how_many"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="278dp"
+        android:layout_marginTop="50sp"
+        app:layout_constraintTop_toBottomOf="@id/price_current"
+        app:layout_constraintBottom_toTopOf="@id/calc"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <Button
+        android:id="@+id/calc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enough_"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="325dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/money"
+        android:onClick="check"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">LoL</string>
+    <string name="price_current">Прейскурант\n
+Пальто-70 сер. монет(скидка 77%)\n
+Шляпа-25 сер. монет(скидка 37%)\n
+Деловой костюм-53 сер. монет(скидка 44%)\n
+Сорочка-19 сер. монет(без скидки)\n
+Туфли-41 сер. монета(скидка 32%)
+    </string>
+    <string name="how_many">Сколько денег?</string>
+    <string name="enough_">Хватит?</string>
+</resources>
